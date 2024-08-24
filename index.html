@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+
+    <style>
+        .parent{
+            width: 400px;
+            height: 400px;
+            border: 2px solid red;
+        }
+
+        .color_ul{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+        }
+
+        .color_li{
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex flex-col justify-center items-center mt-4">
+        <h1 class="text-xl font-bold">Simon says Game</h1>
+        <h1 class="text-md font-bold">Press to start any colo</h1>
+    </div>
+   
+
+<div class="container grid grid-cols-2 grid-rows-2 content-center border-2 px-52 mt-12">
+    
+   <div class="btn bg-red-500 hover:bg-red-600 justify-self-end w-3/4 h-60 red"></div>
+   <div class="btn bg-blue-500 hover:bg-blue-600 w-3/4 h-60 blue"></div>
+   <div class="btn bg-green-500 hover:bg-green-600 justify-self-end w-3/4 h-60 green"></div>
+   <div class="btn bg-yellow-500 hover:bg-yellow-600 w-3/4 h-60 yellow"></div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
