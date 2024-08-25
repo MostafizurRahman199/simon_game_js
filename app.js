@@ -9,7 +9,7 @@ let level = 0;
 let body = document.querySelector("body");
 let score = 0;
 
-document.addEventListener("keypress", function(){
+document.addEventListener("click", function(){
 
     if(started == false){
 
