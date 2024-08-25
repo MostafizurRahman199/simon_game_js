@@ -21,21 +21,26 @@
 }
     </style>
 </head>
-<body>
+<body class="py-4">
 
-    <div class="flex flex-col justify-center items-center mt-4">
-        <h1 class="text-4xl font-bold bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font_1">Simon says Game</h1>
-        <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent font_1">Press to start any color</h1>
+    <div class="flex flex-col justify-center items-center mt-2">
+        <h1 class="lg:text-4xl font-bold bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font_1">Simon says Game</h1>
+        <h2 class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent font_1 text-center">Press to start Enter</h2>
     </div>
    
 
-<div class="container grid grid-cols-2 grid-rows-2 content-center  px-52 mt-12">
+<div class="container grid grid-cols-2 grid-rows-2 content-center  lg:px-52 mt-12 gap-5 ">
     
-   <div type="button" class="btn bg-red-500 hover:bg-red-600 justify-self-end w-2/4 h-60 red"></div>
-   <div type="button"  class="btn bg-blue-500 hover:bg-blue-600 w-2/4 h-60 blue"></div>
-   <div type="button"  class="btn bg-green-500 hover:bg-green-600 justify-self-end w-2/4 h-60 green"></div>
-   <div type="button"  class="btn bg-yellow-500 hover:bg-yellow-600 w-2/4 h-60 yellow"></div>
+   <div type="button" class="btnn active:scale-90 transition-all duration-100 bg-red-500   justify-self-end w-3/4 lg:w-2/4 h-28 sm:h-60 red border-2 lg:border-8 border-slate-600 rounded-[48px]" id="red"></div>
+
+   <div type="button"  class="btnn active:scale-90 transition-all duration-100 bg-blue-500  w-3/4 lg:w-2/4 h-28 sm:h-60 blue border-2 lg:border-8 border-slate-600  rounded-[48px]" id="blue"></div>
+
+   <div type="button"  class="greenn btnn active:scale-90 transition-all duration-100 bg-green-500 h-28 justify-self-end w-3/4 lg:w-2/4 sm:h-60  border-2 lg:border-8 border-slate-600  rounded-[48px] " id="greenn"></div>
+
+   <div type="button"  class="btnn active:scale-90 transition-all duration-100 bg-yellow-500 w-3/4 lg:w-2/4 h-28 sm:h-60 yellow border-2 lg:border-8 border-slate-600  rounded-[48px] " id="yellow"></div>
 </div>
+
+
 
     <script src="app.js"></script>
 </body>
