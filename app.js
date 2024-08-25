@@ -9,14 +9,15 @@ let level = 0;
 let body = document.querySelector("body");
 let score = 0;
 
-document.addEventListener("click", function(){
+h2.addEventListener("click", function(){
+  h2.classList.remove("text-white");
+  h1.classList.remove("text-white");
 
     if(started == false){
 
         console.log("game is started")
         started = true;
-        h2.classList.remove("text-white");
-        h1.classList.remove("text-white");
+       
     }
 
     levelUp();
@@ -103,9 +104,11 @@ function reset(score){
   started = false;
   userSeq = [];
   gameSeq = [];
-  h2.innerHTML = `Game over, Your score is ${score} Press any key to start again`;
+  h2.innerHTML = `Game over, Your score is ${score}, Press here to start again`;
   h2.classList.add("text-white");
   h1.classList.add("text-white");
 
   score=0;
+
+
 }
